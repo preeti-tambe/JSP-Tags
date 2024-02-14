@@ -1,3 +1,4 @@
+<%@ page import="pack.Student" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -7,7 +8,19 @@
 <title>Insert title here</title>
 </head>
 <body>
+<%!
+int my=10;
+void myfun()
+{
+	System.out.println("Hello world");
+	
+}
+%>
+
 <%
+
+Student s= new  Student();
+this.myfun();
 int n1=Integer.parseInt(request.getParameter("num1"));
 int n2=Integer.parseInt(request.getParameter("num2"));
 int sum=n1+n2;
